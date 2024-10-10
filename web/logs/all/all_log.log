@@ -1,0 +1,305 @@
+2024-09-25 20:00:19,678 - INFO - app:is_valid - lineno:183 - username:admin,password:123456: has login filed
+2024-09-25 20:09:46,352 - ERROR - app:historical - lineno:391 - historical rating books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 388, in historical
+    historicals = mysql.fetchall_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 715, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 736, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2024-09-25 20:09:47,974 - ERROR - app:historical - lineno:391 - historical rating books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 388, in historical
+    historicals = mysql.fetchall_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 715, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 736, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2024-09-25 20:09:47,978 - ERROR - app:user - lineno:304 - select UserInfo error: 'NoneType' object has no attribute 'items'
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 302, in user
+    userinfo = [v for k, v in userinfo.items()]
+AttributeError: 'NoneType' object has no attribute 'items'
+2024-09-25 20:09:55,838 - ERROR - app:user - lineno:304 - select UserInfo error: 'NoneType' object has no attribute 'items'
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 302, in user
+    userinfo = [v for k, v in userinfo.items()]
+AttributeError: 'NoneType' object has no attribute 'items'
+2024-09-25 20:09:58,855 - ERROR - app:historical - lineno:391 - historical rating books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 388, in historical
+    historicals = mysql.fetchall_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 715, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 736, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2024-09-25 20:10:07,612 - INFO - app:update_recommend_book - lineno:240 - update_recommend_book, sql: insert into Booktuijian (UserID,BookID,score) values ('admin','0971880107','0') 
+2024-09-25 20:11:52,346 - INFO - app:update_recommend_book - lineno:234 - update_recommend_book, sql:UPDATE Booktuijian SET score='0' WHERE UserID="admin" and BookID="0971880107" 
+2024-09-25 20:11:56,920 - INFO - app:rating - lineno:359 - update book rating success,sql:INSERT INTO Bookrating (UserID,BookID,Rating) values ('admin','0971880107','2') 
+2024-09-25 20:11:57,505 - ERROR - app:rating - lineno:361 - rating books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 351, in rating
+    count = mysql.fetchone_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 33, in fetchone_db
+    c.execute(sql)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1164, in read
+    self._read_result_packet(first_packet)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1239, in _read_result_packet
+    self._get_descriptions()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1341, in _get_descriptions
+    eof_packet = self.connection._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 715, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 736, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2024-09-25 20:11:57,507 - ERROR - app:root - lineno:34 - select hot books error: 'NoneType' object has no attribute 'settimeout'
+Traceback (most recent call last):
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 581, in ping
+    self._read_ok_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 442, in _read_ok_packet
+    pkt = self._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 709, in _read_packet
+    raise err.InternalError(
+pymysql.err.InternalError: Packet sequence number wrong - got 33 expected 4
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 43, in fetchall_db
+    self.connection.ping(reconnect=True)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 584, in ping
+    self.connect()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 636, in connect
+    self._request_authentication()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 696, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 733, in _read_bytes
+    self._sock.settimeout(self._read_timeout)
+AttributeError: 'NoneType' object has no attribute 'settimeout'
+2024-09-25 20:11:57,508 - ERROR - app:rating - lineno:361 - rating books error: (2013, 'Lost connection to MySQL server during query')
+Traceback (most recent call last):
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 581, in ping
+    self._read_ok_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 442, in _read_ok_packet
+    pkt = self._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 705, in _read_packet
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 351, in rating
+    count = mysql.fetchone_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 32, in fetchone_db
+    self.connection.ping(reconnect=True)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 584, in ping
+    self.connect()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 635, in connect
+    self._get_server_information()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1056, in _get_server_information
+    packet = self._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 705, in _read_packet
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+2024-09-25 20:11:58,090 - ERROR - app:root - lineno:34 - select hot books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1164, in read
+    self._read_result_packet(first_packet)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1239, in _read_result_packet
+    self._get_descriptions()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1311, in _get_descriptions
+    field = self.connection._read_packet(FieldDescriptorPacket)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 715, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 736, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2024-09-25 20:11:58,707 - ERROR - app:rating - lineno:361 - rating books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 351, in rating
+    count = mysql.fetchone_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 33, in fetchone_db
+    c.execute(sql)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 715, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 736, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2024-09-25 20:12:00,835 - INFO - app:add - lineno:448 - update Cart  success,sql:INSERT INTO Cart (UserID,BookID ) values ('admin','0971880107') 
+2024-09-25 20:12:24,423 - INFO - app:update_recommend_book - lineno:234 - update_recommend_book, sql:UPDATE Booktuijian SET score='0' WHERE UserID="admin" and BookID="0971880107" 
+2024-09-25 20:12:28,572 - ERROR - app:rating - lineno:361 - rating books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 351, in rating
+    count = mysql.fetchone_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 33, in fetchone_db
+    c.execute(sql)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1164, in read
+    self._read_result_packet(first_packet)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1240, in _read_result_packet
+    self._read_rowdata_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1274, in _read_rowdata_packet
+    packet = self.connection._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 715, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 736, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2024-09-25 20:12:29,362 - ERROR - app:rating - lineno:361 - rating books error: 'NoneType' object has no attribute 'read'
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 351, in rating
+    count = mysql.fetchone_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 33, in fetchone_db
+    c.execute(sql)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "E:\py\lib\site-packages\pymysql\cursors.py", line 325, in _query
+    conn.query(q)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 549, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 779, in _read_query_result
+    result.read()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1157, in read
+    first_packet = self.connection._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 715, in _read_packet
+    recv_data = self._read_bytes(bytes_to_read)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 736, in _read_bytes
+    data = self._rfile.read(num_bytes)
+AttributeError: 'NoneType' object has no attribute 'read'
+2024-09-25 20:12:29,363 - ERROR - app:root - lineno:34 - select hot books error: 'NoneType' object has no attribute 'settimeout'
+Traceback (most recent call last):
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 581, in ping
+    self._read_ok_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 442, in _read_ok_packet
+    pkt = self._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 705, in _read_packet
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 30, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 43, in fetchall_db
+    self.connection.ping(reconnect=True)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 584, in ping
+    self.connect()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 636, in connect
+    self._request_authentication()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 911, in _request_authentication
+    auth_packet = self._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 696, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 733, in _read_bytes
+    self._sock.settimeout(self._read_timeout)
+AttributeError: 'NoneType' object has no attribute 'settimeout'
+2024-09-25 20:12:29,364 - ERROR - app:rating - lineno:361 - rating books error: (2013, 'Lost connection to MySQL server during query')
+Traceback (most recent call last):
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 581, in ping
+    self._read_ok_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 442, in _read_ok_packet
+    pkt = self._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 709, in _read_packet
+    raise err.InternalError(
+pymysql.err.InternalError: Packet sequence number wrong - got 101 expected 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\app.py", line 351, in rating
+    count = mysql.fetchone_db(sql)
+  File "C:\Users\李佳慧\Desktop\图书推荐\Flask-BookRecommend-Mysql\web\utils.py", line 32, in fetchone_db
+    self.connection.ping(reconnect=True)
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 584, in ping
+    self.connect()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 635, in connect
+    self._get_server_information()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 1056, in _get_server_information
+    packet = self._read_packet()
+  File "E:\py\lib\site-packages\pymysql\connections.py", line 705, in _read_packet
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+2024-09-25 20:13:15,916 - INFO - app:update_recommend_book - lineno:234 - update_recommend_book, sql:UPDATE Booktuijian SET score='0' WHERE UserID="admin" and BookID="0971880107" 
