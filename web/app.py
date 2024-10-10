@@ -3,8 +3,11 @@ from logger import setup_log
 from flask import Flask, request, render_template, session, redirect, url_for
 from utils import mysql
 import math
+import os
 
-config = load_config()
+path = os.path.join(os.path.dirname(__file__), 'C:/Users/李佳慧/Desktop/git/20212103860lijiahui/Flask-BookRecommend-Mysql/web/config.yml')
+config = load_config(path)
+config = load_config(path)
 logger = setup_log(__name__)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '470581985@qq.com'
@@ -651,4 +654,4 @@ def addbook():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run(debug=True, port=5000)
